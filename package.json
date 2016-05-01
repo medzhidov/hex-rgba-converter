@@ -1,0 +1,38 @@
+{
+    "name": "hex-rgba-converter",
+    "displayName": "hex-rgba converter",
+    "description": "hex to rgba and rgba to hex with hotkey",
+    "version": "0.0.1",
+    "publisher": "medzhidov",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.toggle"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.toggle",
+            "title": "Toggle hex-rgba"
+        }],
+        "keybindings": [{
+            "command": "extension.toggle",
+            "key": "ctrl+shift+c",
+            "mac": "ctrl+shift+c",
+            "when": "editorTextFocus"
+        }]
+    },
+    "scripts": {
+        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^1.8.5",
+        "vscode": "^0.11.0"
+    }
+}
