@@ -1,13 +1,8 @@
-# README
-## This is the README for your extension "hex-rgba-converter"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# Rgba-Hex converter
+Just converter.
+Yeah, for Rgba and Hex.
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+# How to use
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+1. Just select Rgba or Hex
+2. Hit `ctrl+shift+c` and you will get Hex or Rgba respectively.
