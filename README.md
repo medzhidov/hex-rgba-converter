@@ -1,6 +1,7 @@
-# Rgba-Hex converter
+# Rgba-Hex converter for Visual Studio Code
 Just converter.
-Yeah, for Rgba and Hex.
+Yeah, for Rgba and Hex
+Yeah, for VSCode.
 
 # How to use
 
