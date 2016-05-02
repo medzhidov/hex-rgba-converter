@@ -2,7 +2,7 @@
     "name": "hex-rgba-converter",
     "displayName": "hex-rgba converter",
     "description": "hex to rgba and rgba to hex with hotkey",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "medzhidov",
     "engines": {
         "vscode": "^1.0.0"
