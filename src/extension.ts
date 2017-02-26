@@ -1,14 +1,15 @@
+'use strict';
 // The module 'vscode' contains the VS Code extensibility API
-// Import the necessary extensibility types to use in your code below
+// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
-// This method is called when your extension is activated. Activation is
-// controlled by the activation events defined in package.json.
+// this method is called when your extension is activated
+// your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-    // Use the console to output diagnostic information (console.log) and errors (console.error).
-    // This line of code will only be executed once when your extension is activated.
-    console.log('Congratulations, your extension is now active!');
+    // Use the console to output diagnostic information (console.log) and errors (console.error)
+    // This line of code will only be executed once when your extension is activated
+    console.log('Congratulations, your extension "px-to-rem-with-scss" is now active!');
 
     // create a new word counter
     let selections = new Selections();
@@ -22,10 +23,10 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(disposable);
 }
 
-const patternRgb = /(rgb)(\s*?)(\()(\s*?)([0-9]{1,3})(\s*?)(\,)(\s*?)([0-9]{1,3})(\s*?)(\,)(\s*?)([0-9]{1,3})(\s*?)(\))/g, 
+const   patternRgb = /(rgb)(\s*?)(\()(\s*?)([0-9]{1,3})(\s*?)(\,)(\s*?)([0-9]{1,3})(\s*?)(\,)(\s*?)([0-9]{1,3})(\s*?)(\))/g, 
         patternRgba = /(rgba)(\s*?)(\()(\s*?)([0-9]{1,3})(\s*?)(\,)(\s*?)([0-9]{1,3})(\s*?)(\,)(\s*?)([0-9]{1,3})(\s*?)(\,)(\s*?)(0?)(\.?)([0-9]*)(\s*?)(\))/g,
         patternHex = /\#[0-9a-fA-F]{6}|\#[0-9a-fA-F]{3}/g;
-        
+
 class Selections {
     
     public detect(string){
@@ -117,4 +118,8 @@ class Selections {
 
     dispose() {
     } 
+}
+
+// this method is called when your extension is deactivated
+export function deactivate() {
 }

@@ -1,4 +1,4 @@
-# Rgba-Hex converter for Visual Studio Code
+# Hex-rgba converter converter for Visual Studio Code
 Just converter.
 Yeah, for (Rgba/Rgb) and Hex
 Yeah, for VSCode.
